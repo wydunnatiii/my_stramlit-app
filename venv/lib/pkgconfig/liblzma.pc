@@ -1,0 +1,20 @@
+#
+# Author: Lasse Collin
+#
+# This file has been put into the public domain.
+# You can do whatever you want with this file.
+#
+
+prefix=/Users/unnatipal/langchain/venv
+exec_prefix=/Users/unnatipal/langchain/venv
+libdir=/Users/unnatipal/langchain/venv/lib
+includedir=/Users/unnatipal/langchain/venv/include
+
+Name: liblzma
+Description: General purpose data compression library
+URL: https://xz.tukaani.org/xz-utils/
+Version: 5.4.6
+Cflags: -I${includedir}
+Cflags.private: -DLZMA_API_STATIC
+Libs: -L${libdir} -llzma
+Libs.private: -pthread -lpthread

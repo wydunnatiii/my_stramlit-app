@@ -1,0 +1,13 @@
+prefix=/Users/unnatipal/langchain/venv
+exec_prefix=/Users/unnatipal/langchain/venv
+libdir=/Users/unnatipal/langchain/venv/lib
+sharedlibdir=/Users/unnatipal/langchain/venv/lib
+includedir=/Users/unnatipal/langchain/venv/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
